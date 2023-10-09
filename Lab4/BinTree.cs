@@ -1,5 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
-
 namespace Lab4;
 
 public class BinTree<T>
@@ -33,7 +31,7 @@ public class BinTree<T>
                 LeftChild.Add(id, data);   
             }
         }
-        else
+        else if(id > this.id)
         {
             if(RightChild == null)
             {
@@ -43,6 +41,97 @@ public class BinTree<T>
             {
                 RightChild.Add(id, data);
             }
+        }
+        else
+        {
+            throw new Exception("This id is already used");
+        }
+    }
+
+    public void Remove(int id)
+    {
+        BinTree<T> element = Find(this, id);
+        BinTree<T> tempElement;
+        if(element == this)
+        {
+            if(element.RightChild != null)
+            {
+                tempElement = element.RightChild; 
+            }
+            else
+            {
+                tempElement = element.LeftChild;
+            }
+
+            while(tempElement.LeftChild != null)
+            {
+                tempElement = tempElement.LeftChild;
+            }
+
+            Remove(tempElement.id);
+            this.id = tempElement.id;
+            this.data = tempElement.data;
+            return;
+        }
+
+        if(element.LeftChild == null && element.RightChild == null && element.Parent != null)
+        {
+            if(element.Parent.LeftChild == element){
+                element.Parent.LeftChild = null;
+            }
+            else if(element.Parent.RightChild == element)
+            {
+                element.Parent.RightChild = null;
+            }
+            return;
+        }
+
+        if(element.LeftChild != null && element.RightChild == null)
+        {
+            element.LeftChild.Parent = element.Parent;
+            if(element.Parent.LeftChild == element){
+                element.Parent.LeftChild = element.LeftChild;
+            }
+            else if(element.Parent.RightChild == element)
+            {
+                element.Parent.RightChild = element.LeftChild;
+            }
+            return;
+        }
+
+        if(element.LeftChild == null && element.RightChild != null)
+        {
+            element.RightChild.Parent = element.Parent;
+            if(element.Parent.LeftChild == element){
+                element.Parent.LeftChild = element.RightChild;
+            }
+            else if(element.Parent.RightChild == element)
+            {
+                element.Parent.RightChild = element.RightChild;
+            }
+            return;
+        }
+
+        if(element.LeftChild != null && element.RightChild != null)
+        {
+            tempElement = element.RightChild;
+
+            while(tempElement.LeftChild != null)
+            {
+                tempElement = tempElement.LeftChild;
+            }
+
+            Remove(tempElement.id);
+            if(element.Parent.LeftChild == element){
+                element.Parent.LeftChild = tempElement;
+            }
+            else if(element.Parent.RightChild == element)
+            {
+                element.Parent.RightChild = tempElement;
+            }
+            tempElement.LeftChild = element.LeftChild;
+            tempElement.RightChild = element.RightChild;
+            return;
         }
     }
 

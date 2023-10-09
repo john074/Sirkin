@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yqEuDPG0Sa2xOsy1kX0KHJKNLYY9HvV7KTvEtubm2yzrILG9MgoYdFLr5p1VRkw/lzd620ocv9TnTIhI6N5qIw==",
+  "success": true,
+  "projectFilePath": "/home/sunflower/CS/SirkinLabs/Lab5/Lab5.csproj",
+  "expectedPackageFiles": [
+    "/home/sunflower/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.11/microsoft.aspnetcore.app.ref.7.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
