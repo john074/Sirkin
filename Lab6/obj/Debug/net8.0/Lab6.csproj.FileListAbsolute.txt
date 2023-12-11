@@ -1,0 +1,14 @@
+/home/sunflower/CS/SirkinLabs/Lab6/bin/Debug/net8.0/Lab6
+/home/sunflower/CS/SirkinLabs/Lab6/bin/Debug/net8.0/Lab6.deps.json
+/home/sunflower/CS/SirkinLabs/Lab6/bin/Debug/net8.0/Lab6.runtimeconfig.json
+/home/sunflower/CS/SirkinLabs/Lab6/bin/Debug/net8.0/Lab6.dll
+/home/sunflower/CS/SirkinLabs/Lab6/bin/Debug/net8.0/Lab6.pdb
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/Lab6.GeneratedMSBuildEditorConfig.editorconfig
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/Lab6.AssemblyInfoInputs.cache
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/Lab6.AssemblyInfo.cs
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/Lab6.csproj.CoreCompileInputs.cache
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/Lab6.dll
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/refint/Lab6.dll
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/Lab6.pdb
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/Lab6.genruntimeconfig.cache
+/home/sunflower/CS/SirkinLabs/Lab6/obj/Debug/net8.0/ref/Lab6.dll
